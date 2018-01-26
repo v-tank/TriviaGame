@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    opacity: 1;
+    font-family: "American Typewriter";
+}
+
+.bg { 
+    /* The image used */
+    /*background-image: url("../images/bg.jpeg");*/
+		padding: 40px;
+    
+    /* Full height */
+    height: 100%; 
+		
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background: linear-gradient(
+                     rgba(20, 20, 20, 0.3), 
+                     rgba(20,20,20, 1)),
+                     url( "../images/bg.jpeg");
+}
+
+img {
+	width: 550px;
+}
+
+@font-face {
+	font-family: 'American Typewriter';
+	src: url("American Typewriter Regular.ttf");
+}
+
+.hideUponStart {
+	display: none;
+}
+
+.hiddenAtStart {
+	display: none;
+}
