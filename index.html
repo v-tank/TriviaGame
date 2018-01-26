@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>The Office | Trivia Game</title>
 
-  <!-- Added link to the jQuery Library -->
+  <!-- Added a link to the jQuery Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- Added a link to Bootstrap -->
@@ -17,8 +17,10 @@
 </head>
 
 <body>
-
+ <!-- Creates the main container section -->
   <div class="container bg">
+
+    <!-- Creates the title container section -->
     <div class="col-lg-6 mx-auto" id="startTitle">
         <div class="card text-center">
           <div class="card-header"></div>
@@ -30,7 +32,8 @@
       </div>
 
       <br>
-
+    
+    <!-- Creates the start section which is hidden upon start -->
     <div class="row" id="startSection">
       <div class="col-lg text-center">
         <div class="card">
@@ -42,6 +45,7 @@
       </div>
     </div>
     
+    <!-- Creates the score container section that's hidden at start and aligned to the left -->
     <div class="row hiddenAtStart" id="scorePanel">
       <div class="col-lg-3 mr-auto" id="score-box">
         <div class="card">
@@ -52,6 +56,7 @@
         </div>
       </div>
       
+      <!-- Creates the title container section that's hidden at start and aligned center -->
       <div class="col-lg-6 mx-auto">
         <div class="card text-center">
           <div class="card-header"></div>
@@ -62,6 +67,7 @@
         </div>
       </div>
 
+      <!-- Creates the timer container section that's hidden at start and aligned to the right -->
       <div class="col-lg-3 ml-auto" id="time-box">
         <div class="card">
           <h5 class="card-header text-center">Timer</h5>
@@ -74,12 +80,11 @@
     
     <br>
     
+    <!-- Creates the progress bar section that's hidden at start -->
     <div id="bar" class="hiddenAtStart">
-      <!-- <div class="progress">
-        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-      </div> -->
     </div>
 
+    <!-- Creates the row that holds the quiz content -->
     <div class="row">
       <!-- Question Element goes here -->
       <div class="col-lg-12" id="quiz">
@@ -88,7 +93,8 @@
     </div> 
 
   </div>
-
+  
+  <!-- Added a link to JS file -->
   <script src="assets/javascript/app.js"></script>
 
 </body>
