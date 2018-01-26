@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Trivia Game</title>
+  <title>The Office | Trivia Game</title>
 
   <!-- Added link to the jQuery Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,14 +17,20 @@
 </head>
 
 <body>
-  
-  <div class="jumbotron jumbotron-fluid pt-3 pb-3">
-    <div class="container">
-      <h1 class="display-2 text-center">the office trivia</h1>
-    </div>
-  </div>
 
   <div class="container bg">
+    <div class="col-lg-6 mx-auto" id="startTitle">
+        <div class="card text-center">
+          <div class="card-header"></div>
+          <div class="card-body">
+            <h1 class="card-title">the office trivia</h5>
+          </div>
+          <div class="card-footer text-muted"></div>
+        </div>
+      </div>
+
+      <br>
+
     <div class="row" id="startSection">
       <div class="col-lg text-center">
         <div class="card">
@@ -37,7 +43,7 @@
     </div>
     
     <div class="row hiddenAtStart" id="scorePanel">
-      <div class="col-lg-3 mr-auto">
+      <div class="col-lg-3 mr-auto" id="score-box">
         <div class="card">
           <h5 class="card-header text-center">Score</h5>
           <div class="card-body text-center">
@@ -45,7 +51,18 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 ml-auto">
+      
+      <div class="col-lg-6 mx-auto">
+        <div class="card text-center">
+          <div class="card-header"></div>
+          <div class="card-body">
+            <h1 class="card-title">the office trivia</h5>
+          </div>
+          <div class="card-footer text-muted"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 ml-auto" id="time-box">
         <div class="card">
           <h5 class="card-header text-center">Timer</h5>
           <div class="card-body text-center">
@@ -56,6 +73,12 @@
     </div>
     
     <br>
+    
+    <div id="bar" class="hiddenAtStart">
+      <!-- <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div> -->
+    </div>
 
     <div class="row">
       <!-- Question Element goes here -->

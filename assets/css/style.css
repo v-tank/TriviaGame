@@ -1,17 +1,7 @@
-body, html {
+body, html{
     height: 100%;
     opacity: 1;
     font-family: "American Typewriter";
-}
-
-.bg { 
-    /* The image used */
-    /*background-image: url("../images/bg.jpeg");*/
-		padding: 40px;
-    
-    /* Full height */
-    height: 100%; 
-		
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -20,11 +10,25 @@ body, html {
     background: linear-gradient(
                      rgba(20, 20, 20, 0.3), 
                      rgba(20,20,20, 1)),
-                     url( "../images/bg.jpeg");
+                     url( "../images/bg2.jpeg");
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.bg { 
+    /* The image used */
+    /*background-image: url("../images/bg.jpeg");*/
+	padding: 40px;
+    
+    /* Full height */
+    /*height: 100%; */
 }
 
 img {
-	width: 550px;
+	max-width: 550px;
+    width: 100%;
 }
 
 @font-face {
@@ -38,4 +42,12 @@ img {
 
 .hiddenAtStart {
 	display: none;
+}
+
+.hideAtEnd {
+    display: none;
+}
+
+.buttonWidth {
+    width: 30%;
 }
