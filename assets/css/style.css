@@ -1,16 +1,24 @@
+/* imports the custom font from the official logo */
+@font-face {
+    font-family: 'American Typewriter';
+    src: url("American Typewriter Regular.ttf", "Times New Roman");
+}
+
 body, html{
     height: 100%;
-    opacity: 1;
+    opacity: 0.93;
     font-family: "American Typewriter";
+
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
+    /* adds a linear gradient to the background */
     background: linear-gradient(
-                     rgba(20, 20, 20, 0.3), 
-                     rgba(20,20,20, 1)),
-                     url( "../images/bg2.jpeg");
+        rgba(20, 20, 20, 0.3), 
+        rgba(20,20,20, 1)),
+        url( "../images/bg2.jpeg");
 }
 
 h1 {
@@ -18,12 +26,7 @@ h1 {
 }
 
 .bg { 
-    /* The image used */
-    /*background-image: url("../images/bg.jpeg");*/
 	padding: 40px;
-    
-    /* Full height */
-    /*height: 100%; */
 }
 
 img {
@@ -31,23 +34,22 @@ img {
     width: 100%;
 }
 
-@font-face {
-	font-family: 'American Typewriter';
-	src: url("American Typewriter Regular.ttf");
-}
-
+/* class that's added dynamically to hide divs when the start button is clicked */
 .hideUponStart {
 	display: none;
 }
 
+/* class that's added dynamically to unhide divs when the start button is clicked */
 .hiddenAtStart {
 	display: none;
 }
 
+/* class that's added dynamically to hide divs when the final screen is displayed */
 .hideAtEnd {
     display: none;
 }
 
+/* sets the width of the bootstrap buttons */
 .buttonWidth {
     width: 30%;
 }
