@@ -236,7 +236,7 @@ function createQuestionElement(index) {
 
   // creates the 4 buttons in a for-loop using the questions object with the answers and the index
   for (var i = 0; i < 4; i++) {
-    var answerChoices = $('<center><button type="button" class="btn btn-primary btn-lg buttonWidth" value='+i+'>'+questions[index].choices[i]+'</button></center><br>');
+    var answerChoices = $('<center><button id="hover-sound" type="button" class="btn btn-primary btn-lg buttonWidth" value='+i+'>'+questions[index].choices[i]+'</button></center><br>');
     questionDiv.append(answerChoices);
 	}
 
@@ -416,6 +416,17 @@ function gameOver() {
     startGame();
   });
 }
+
+// function to fetch the audio from the html page and play it
+function playClip() {
+  var audio = $("audio")[0];
+  audio.play();
+}
+
+// use a document 'mouseenter' event for dynamically created buttons to play the audio file upon hover
+$(document).on("mouseenter", "#hover-sound", function() {
+  playClip();
+});
 
 // main function that waits for the user to click the 'start' button
 $("#startButton").on("click", function() {
